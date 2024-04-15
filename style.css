@@ -59,6 +59,9 @@ p{
     color: hsl(300, 43%, 22%);
     padding-left: 2rem;
     display: flex;
+}
+
+.star_format{
     gap: 0.4rem;
 }
 
@@ -155,4 +158,42 @@ p{
     bottom: 0;
     right: 0;
     width: 60vw;
+}
+
+@media (max-width: 375px){
+    .main_container{
+        overflow-x: hidden;
+    }
+
+    .top{
+        flex-direction: column;
+        height: auto;
+        padding: 2rem 3rem;
+    }
+
+    .titulo{
+        width: 100%;
+        margin-top: 3rem;
+
+    }
+
+    .title{
+        width: 100%;
+    }
+
+    .marg{
+        padding: 0;
+    }
+
+    .m_1, .m_2, .m_3{
+        margin-left: 0;
+    }
+
+    .sm_cont{
+        width: 100%;
+        flex-direction: column;
+
+    }
+
+
 }
