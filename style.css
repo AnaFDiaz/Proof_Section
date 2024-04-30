@@ -1,211 +1,234 @@
-@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap");
 
-*{
-    margin: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.main_container{
+.main_container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container_stars {
+  width: 50%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 1rem;
+}
+
+.marg {
+  padding-left: 10rem;
+  padding-right: 9rem;
+}
+
+h1 {
+  font-family: "League Spartan", sans-serif;
+  color: hsl(300, 43%, 22%);
+  font-size: 50px;
+}
+
+p {
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+}
+
+.title {
+  color: hsl(303, 10%, 53%);
+  padding-top: 2rem;
+}
+
+.purple_container {
+  width: 400px;
+  padding: 1rem 2rem;
+  background-color: hsl(300, 24%, 96%);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+}
+
+.sm_format {
+  font-size: 15px;
+  font-family: "League Spartan", sans-serif;
+  color: hsl(300, 43%, 22%);
+  display: flex;
+}
+
+.star_format {
+  gap: 0.4rem;
+}
+
+.m_1 {
+  margin-left: 3rem;
+}
+
+.m_2 {
+  margin-left: 6rem;
+}
+
+.m_3 {
+  margin-left: 9rem;
+}
+
+.rate {
+  padding-left: 1.5rem;
+  font-weight: bold;
+}
+
+.big {
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.top {
+  width: 100vw;
+  height: 50vh;
+  display: flex;
+}
+
+.box {
+  width: 17.5rem;
+  padding: 2rem 0;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.mt_1 {
+  margin-top: 3rem;
+}
+
+.mt_2 {
+  margin-top: 6rem;
+}
+
+#pic {
+  width: 40px;
+  height: 40px;
+  border-radius: 100px;
+  margin-left: 1.5rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.names {
+  color: white;
+  font-weight: bold;
+  padding-left: 1rem;
+}
+
+.buyer {
+  color: hsl(333, 80%, 67%);
+  padding-left: 1rem;
+  padding-top: 0.3rem;
+}
+
+.text {
+  color: white;
+  padding-left: 1rem;
+  padding-top: 1rem;
+}
+
+#pattern {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+
+#pattern_2 {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: 0;
+  width: 60vw;
+}
+
+.text {
+  line-height: 1.2rem;
+}
+
+@media (max-width: 375px) {
+  .main_container {
+    overflow-x: hidden;
+    text-align: center;
+  }
+
+  .top {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem 1rem;
+  }
+
+  .container {
     width: 100%;
-    height: 100vh;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-}
-
-.titulo{
-    width: 50%;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-
-.marg{
-    padding-left: 10rem;
-    padding-right: 9rem;
-}
-
-h1{
-    font-family: "League Spartan", sans-serif;
-    color: hsl(300, 43%, 22%);
-    font-size: 50px;
-}
-
-p{
-    font-family: "League Spartan", sans-serif;
-    font-size: 15px;
-}
-
-.title{
-    color: hsl(303, 10%, 53%);
-    padding-top: 2rem;
-}
-
-.sm_cont{
-    width: 400px;
-    height: 50px;
-    background-color: hsl(300, 24%, 96%);
-    position: absolute;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-}
-
-.sm_format{
-    font-size: 15px;
-    font-family: "League Spartan", sans-serif;
-    color: hsl(300, 43%, 22%);
-    padding-left: 2rem;
-    display: flex;
-}
-
-.star_format{
-    gap: 0.4rem;
-}
-
-.m_1{
-    margin-left: 3rem;
-    margin-top: -7rem;
-}
-
-.m_2{
-    margin-left: 6rem;
-    margin-top: 1rem;
-}
-
-.m_3{
-    margin-left: 9rem;
-    margin-top: 9rem;
-}
-
-.rate{
-    padding-left: 1.5rem;
-    font-weight: bold;
-}
-
-.big{
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-}
-
-.top{
-    width: 100vw;
-    height: 50vh;
-    display: flex;
-}
-
-.box{
-    width: 17.5rem;
-    height: 11rem;
-    background-color: hsl(300, 43%, 22%);
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-}
-
-.mt_1{
     margin-top: 3rem;
-}
+    height: auto;
+    margin-bottom: 3rem;
+  }
 
-.mt_2{
-    margin-top: 6rem;
-}
+  .container_stars {
+    width: 100%;
+    height: auto;
+    justify-content: flex-start;
+  }
 
-#pic{
-    width: 40px;
-    height: 40px;
-    border-radius: 100px;
-    margin-top: 1.5rem;
-    margin-left: 1.5rem;
-}
+  .title {
+    width: 100%;
+    justify-content: center;
+  }
 
-.perfil{
-    display: flex;
-}
+  .marg {
+    padding: 0;
+  }
 
-.names{
-    color: white;
-    font-weight: bold;
-    padding-left: 1rem;
-    padding-top: 2rem;
-}
+  .m_1,
+  .m_2,
+  .m_3 {
+    margin-left: 0;
+  }
 
-.buyer{
-    color: hsl(333, 80%, 67%);
-    padding-left: 1rem;
-    padding-top: .3rem;
-}
+  .purple_container {
+    width: 100%;
+    flex-direction: column;
+  }
 
-.text{
-    color: white;
-    padding-left: 1rem;
-    padding-top: 2rem;
-}
+  .big {
+    gap: 0;
+  }
 
-#pattern{
-    position: absolute;
-    z-index: 1;
-    top: 0;
-    left: 0;
-}
+  .comments {
+    text-align: center;
+  }
 
-#pattern_2{
-    position: absolute;
-    z-index: 1;
-    bottom: 0;
-    right: 0;
-    width: 60vw;
-}
+  .star_format {
+    margin-bottom: 0.2rem;
+  }
 
-@media (max-width: 375px){
-    .main_container{
-        overflow-x: hidden;
-        text-align: center;
-    
-    }
+  .box {
+    width: 100%;
+    padding-right: 1rem;
+  }
 
-    .top{
-        flex-direction: column;
-        height: auto;
-        padding: 2rem 3rem;
-    }
-
-    .titulo{
-        width: 100%;
-        margin-top: 3rem;
-
-    }
-
-    .title{
-        width: 100%;
-        justify-content: center;
-    }
-
-    .marg{
-        padding: 0;
-    }
-
-    .m_1, .m_2, .m_3{
-        margin-left: 0;
-    }
-
-    .sm_cont{
-        width: 100%;
-        flex-direction: column;
-
-
-    }
-
-    .big{
-        gap: 0;
-    }
-
-    .comments{
-        text-align: center;
-    }
-
-
+  .mt_2 {
+    margin-top: 3rem;
+  }
 }
