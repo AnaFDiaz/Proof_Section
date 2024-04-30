@@ -163,6 +163,8 @@ p{
 @media (max-width: 375px){
     .main_container{
         overflow-x: hidden;
+        text-align: center;
+    
     }
 
     .top{
@@ -179,6 +181,7 @@ p{
 
     .title{
         width: 100%;
+        justify-content: center;
     }
 
     .marg{
@@ -193,6 +196,15 @@ p{
         width: 100%;
         flex-direction: column;
 
+
+    }
+
+    .big{
+        gap: 0;
+    }
+
+    .comments{
+        text-align: center;
     }
 
 
